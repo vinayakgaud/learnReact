@@ -4,6 +4,19 @@ import "./App.css";
 function App() {
   let id = 0;
   const [count, setCount] = useState(0); //here in useState we enter the initial value, as like start with 0 or false like that and for state variable inside setCount func we have to update new value for state variable, not change the state var value for ex. can't do count++ instead do count + 1
+  //for multiple state
+  //let [globalState, setGlobalState] = useState([
+  // topbar: {
+  //   notification: 0,
+  //   message: 1
+  // }
+  // ]) //not recommended
+
+  //else use mutiple state
+  //const [count, setCount] = useState(0);
+  //const [count, setCount] = useState(0);
+  //const [count, setCount] = useState(0);
+  //useState is not asynchronous
   const [todos, getTodos] = useState([
     {
       id: id++,
